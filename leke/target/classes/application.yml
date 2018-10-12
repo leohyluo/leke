@@ -1,5 +1,0 @@
-spring:
-  profile:
-    active: dev
-server:
-  port: 9081
