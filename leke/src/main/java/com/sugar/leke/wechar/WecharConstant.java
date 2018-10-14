@@ -5,8 +5,11 @@ public class WecharConstant {
 	//	事件KEY值，qrscene_为前缀，后面为二维码的参数值
 	public static final String prefix = "qrscene_";
 	// 个人APPID和Secret
-	public static final String APPID = "wxd59ce599362b9726";//个人
-	public static final String SECRET = "cbec6944680ce57c14e0caae029bc031";//个人
+//	public static final String APPID = "wxd59ce599362b9726";//个人
+//	public static final String SECRET = "cbec6944680ce57c14e0caae029bc031";//个人
+	//个人服务号（般弱）
+	public static final String APPID = "wx26cb8f7603c58d8d";//个人
+	public static final String SECRET = "8d32c8440cb6f72ee2ba3ee336091f04";//个人
 	// 公司APPID和Secret
 //	public static final String APPID = "wxfdda8ab049068d08";//公司
 //	public static final String SECRET = "40b61d4e6f94a38c23ac7562c83faf33";//公司

@@ -14,7 +14,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class WecharUtils {
-	
+
+    //消息加密密钥
+    private static final String EncodingAESKey = "ovBZS9FFXLDdFC8USMLFyH412tsCsLM42Du2yp3GGpl";
 	private static final String TOKEN = "zxcvbnm12345678";
 	private static Map<String, AccessTokenDTO> accessTokenMap = new HashMap<>();
 	private static final String ACCESSTOKEN_KEY = "AccessToken";
