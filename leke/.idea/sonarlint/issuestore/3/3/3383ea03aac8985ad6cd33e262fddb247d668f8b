@@ -1,0 +1,8 @@
+
+¹%squid:RedundantThrowsDeclarationCheck"‰Remove the declaration of thrown exception 'org.apache.http.client.ClientProtocolException' which is a subclass of 'java.io.IOException'.(²Äš›
+Qsquid:S2629"7Use the built-in formatting to construct this argument.(ËÛÄ›øÿÿÿÿ
+<squid:S1214""Move constants to a class or enum.(íÜùÐúÿÿÿÿ
+L
+squid:S106"9Replace this use of System.out or System.err by a logger.(Œ¹]
+vsquid:S1488"aImmediately return this expression instead of assigning it to the temporary variable "ticketDto".(ÄÕ‚Ó
+[squid:S3457"AFormat specifiers should be used instead of string concatenation.(ËÛÄ›øÿÿÿÿ

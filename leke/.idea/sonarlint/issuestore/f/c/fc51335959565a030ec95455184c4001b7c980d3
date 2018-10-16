@@ -1,0 +1,10 @@
+
+Lsquid:S2629"7Use the built-in formatting to construct this argument.(··Ïø
+0squid:S3626"Remove this redundant jump.(ûÁİ…
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¶ú¶û
+Lsquid:S1135"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ
+gsquid:UselessImportCheck"@Remove this unused import 'com.sugar.leke.wechar.dto.FollowDTO'.(ò•ÙÎıÿÿÿÿ
+Xsquid:UselessImportCheck"6Remove this unused import 'javax.annotation.Resource'.(î¾Ì—
+dsquid:UselessImportCheck"BRemove this unused import 'com.sugar.leke.wechar.CallBackHandler'.(¾¨Ø
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Vsquid:S3457"AFormat specifiers should be used instead of string concatenation.(··Ïø

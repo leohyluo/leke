@@ -1,0 +1,14 @@
+
+psquid:S3776`"RRefactor this method to reduce its Cognitive Complexity from 33 to the 15 allowed.(ºßÓ8Í†Ù¶ç,
+Qsquid:S1068
+".Remove this unused "MULTIPLIER" private field.(ÑÇôæúÿÿÿÿ8Í†Ù¶ç,
+Ssquid:S1068"0Remove this unused "EMPTY_STRING" private field.(ã“°öúÿÿÿÿ8Í†Ù¶ç,
+Ssquid:S1068	"0Remove this unused "INITIAL_HASH" private field.(õ¬–Èøÿÿÿÿ8Í†Ù¶ç,
+Xsquid:S1068";Remove this unused "ARRAY_ELEMENT_SEPARATOR" private field.(Óˆ¾98Í†Ù¶ç,
+Rsquid:S1068"/Remove this unused "NULL_STRING" private field.(–ê¾üıÿÿÿÿ8Í†Ù¶ç,
+]squid:S1118":Add a private constructor to hide the implicit public one.(îÄ„šıÿÿÿÿ8Í†Ù¶ç,
+Msquid:S1068"/Remove this unused "EMPTY_ARRAY" private field.(¡–ùå8Í†Ù¶ç,
+Psquid:S1068"-Remove this unused "ARRAY_END" private field.(…òÀİûÿÿÿÿ8Í†Ù¶ç,
+qsquid:S3776Š"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(Øë¿8Í†Ù¶ç,
+Lsquid:S1068"/Remove this unused "ARRAY_START" private field.(Á‡¦
+8Í†Ù¶ç,

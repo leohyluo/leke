@@ -1,0 +1,9 @@
+
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+ysquid:S1488"_Immediately return this expression instead of assigning it to the temporary variable "authDto".( ¾ÓÉÿÿÿÿÿ
+Qsquid:S2629"7Use the built-in formatting to construct this argument.(ë‹ô¬üÿÿÿÿ
+[squid:S3457"AFormat specifiers should be used instead of string concatenation.(ë‹ô¬üÿÿÿÿ
+qsquid:UselessImportCheck"ORemove this unused import 'org.springframework.beans.factory.annotation.Value'.(ìø›
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+ssquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Çì­Àüÿÿÿÿ

@@ -5,7 +5,6 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import java.time.LocalDateTime;
-import java.util.Date;
 
 @Table
 @Entity(name = "user_account")
@@ -22,7 +21,7 @@ public class UserAccount {
     private String password;
 
     @Column(name = "register_time")
-    private Date registerTime;
+    private LocalDateTime registerTime;
 
     @Column(name = "expire_time")
     private LocalDateTime expireTime;
