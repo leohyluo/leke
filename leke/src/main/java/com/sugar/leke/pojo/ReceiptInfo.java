@@ -6,9 +6,19 @@ public class ReceiptInfo {
 
     private String mobile;
     private Integer totalCount;
-    private Integer successOrderCount;
+    private Integer successCount;
     private Integer errorCount;
-    private List<String> errList;
+    private String errorMsg;
+    private Integer status;
+
+    public ReceiptInfo() {}
+
+    public ReceiptInfo(String mobile) {
+        this.mobile = mobile;
+        this.totalCount = 0;
+        this.successCount = 0;
+        this.errorCount = 0;
+    }
 
     public String getMobile() {
         return mobile;
@@ -26,12 +36,12 @@ public class ReceiptInfo {
         this.totalCount = totalCount;
     }
 
-    public Integer getSuccessOrderCount() {
-        return successOrderCount;
+    public Integer getSuccessCount() {
+        return successCount;
     }
 
-    public void setSuccessOrderCount(Integer successOrderCount) {
-        this.successOrderCount = successOrderCount;
+    public void setSuccessCount(Integer successCount) {
+        this.successCount = successCount;
     }
 
     public Integer getErrorCount() {
@@ -42,11 +52,19 @@ public class ReceiptInfo {
         this.errorCount = errorCount;
     }
 
-    public List<String> getErrList() {
-        return errList;
+    public String getErrorMsg() {
+        return errorMsg;
     }
 
-    public void setErrList(List<String> errList) {
-        this.errList = errList;
+    public void setErrorMsg(String errorMsg) {
+        this.errorMsg = errorMsg;
+    }
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
     }
 }

@@ -1,6 +1,8 @@
 package com.sugar.leke.service.impl;
 
 import com.alibaba.fastjson.JSONObject;
+import com.sugar.leke.enums.AccountStatus;
+import com.sugar.leke.pojo.ReceiptInfo;
 import com.sugar.leke.service.OrderService;
 import com.sugar.leke.thread.ReceiptThread;
 import com.sugar.leke.thread.pool.ThreadPoolScheduler;
@@ -17,13 +19,6 @@ import java.util.Map;
 public class OrderServiceImpl implements OrderService {
 
     private static Map<String, String> map = new HashMap<>();
-    static {
-        map.put("15818518021", "zxcvbnm123");
-        /*map.put("13691645822", "");
-        map.put("18200898720", "");
-        map.put("15018079780", "");
-        map.put("13360537242", "");*/
-    }
 
     @Override
     public void login(String userName, String password, String sessionId) {
@@ -54,7 +49,13 @@ public class OrderServiceImpl implements OrderService {
     public void receipt(String userName, String sessionId) {
         String url = "http://s.58leke.com/index.php?s=/Indexajax/taskset.html";
         String param = "task_type=1&app=1&pc=2&maxmoney=&hasCaptcha=0&captcha_code=";
+
+        ReceiptInfo receiptInfo = new ReceiptInfo(userName);
+        receiptInfo.setTotalCount(1);
+        receiptInfo.setStatus(AccountStatus.接单中.getCode());
+
         ThreadPoolScheduler.addTask(new ReceiptThread(userName, sessionId));
+
     }
 
     @Override

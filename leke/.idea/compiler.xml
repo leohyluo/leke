@@ -9,5 +9,8 @@
         <module name="leke" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="leke" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
