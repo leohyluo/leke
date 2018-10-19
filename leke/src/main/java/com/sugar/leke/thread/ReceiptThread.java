@@ -35,13 +35,13 @@ public class ReceiptThread implements Runnable {
         while(true) {
             String result = HttpUtils.doPost(url, param, requestHeader);
             try {
-                Thread.sleep(2000);
+                Thread.sleep(5000);
                 JSONObject json = JSONObject.parseObject(result);
                 System.out.println(json.toJSONString());
                 String msgs = json.getString("msgs");
                 if (msgs == null || "".equals(msgs)) {
                     System.out.println(this.mobile + "出现异常");
-                    break;
+                    continue;
                 }
                 if(msgs.contains("成功")){
                     System.out.println(this.mobile + "接单成功！");

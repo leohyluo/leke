@@ -2,6 +2,8 @@ package com.sugar.leke.service.impl;
 
 import com.alibaba.fastjson.JSONObject;
 import com.sugar.leke.enums.AccountStatus;
+import com.sugar.leke.mapper.OrderTaskMapper;
+import com.sugar.leke.pojo.OrderTask;
 import com.sugar.leke.pojo.ReceiptInfo;
 import com.sugar.leke.service.OrderService;
 import com.sugar.leke.thread.ReceiptThread;
@@ -10,6 +12,7 @@ import com.sugar.leke.util.CollectionUtils;
 import com.sugar.leke.util.HttpUtils;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.List;
@@ -19,6 +22,8 @@ import java.util.Map;
 public class OrderServiceImpl implements OrderService {
 
     private static Map<String, String> map = new HashMap<>();
+    @Resource
+    private OrderTaskMapper orderTaskMapper;
 
     @Override
     public void login(String userName, String password, String sessionId) {
@@ -49,6 +54,14 @@ public class OrderServiceImpl implements OrderService {
     public void receipt(String userName, String sessionId) {
         String url = "http://s.58leke.com/index.php?s=/Indexajax/taskset.html";
         String param = "task_type=1&app=1&pc=2&maxmoney=&hasCaptcha=0&captcha_code=";
+
+        //查看是否有未完成的订单，如果有则提示用户，没有则开始接单
+        OrderTask orderParam = new OrderTask();
+        orderParam.setMobile(userName);
+        orderParam.setToday("");
+        List<OrderTask> orderTaskList = orderTaskMapper.listUserOrderByStatus(orderParam);
+        orderTaskList.stream().filter(e -> e.getStatus() == AccountStatus.接单中.getCode()).
+
 
         ReceiptInfo receiptInfo = new ReceiptInfo(userName);
         receiptInfo.setTotalCount(1);

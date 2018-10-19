@@ -1,47 +1,47 @@
 
-Msquid:S1602",Remove useless curly braces around statement( ãöùÿÿÿÿ8½¯‚Õç,
-Msquid:S1612",Replace this lambda with a method reference.( ãöùÿÿÿÿ8½¯‚Õç,
-Dsquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
-~squid:S1192"bDefine a constant instead of duplicating this literal "å‘é€ POST è¯·æ±‚å‡ºç°å¼‚å¸¸ï¼" 3 times.(ğÂè‚8­ô±ç,
-lsquid:S1192"KDefine a constant instead of duplicating this literal "user-agent" 5 times.( ±ƒåıÿÿÿÿ8­ô±ç,
-esquid:S1192"KDefine a constant instead of duplicating this literal "Keep-Alive" 3 times.(è²š„øÿÿÿÿ
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(³‚©‘üÿÿÿÿ8½¯‚Õç,
-=squid:S1643"Use a StringBuilder instead.(¦í°—øÿÿÿÿ8­ô±ç,
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8­ô±ç,
+=squid:S1643"Use a StringBuilder instead.(¦í°—øÿÿÿÿ8¿±›×ç,
+“squid:S1192"wDefine a constant instead of duplicating this literal "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;SV1)" 5 times.(ï“ŞŒ8¿±›×ç,
+lsquid:S1192"KDefine a constant instead of duplicating this literal "user-agent" 5 times.( ±ƒåıÿÿÿÿ8¿±›×ç,
+Ksquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8¿±›×ç,
+Ksquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8¿±›×ç,
+?squid:S1148"#Use a logger to log this exception.(Ç’Çê8¿±›×ç,
 T
-squid:S106"9Replace this use of System.out or System.err by a logger.(ğÂè‚8­ô±ç,
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8­ô±ç,
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8­ô±ç,
-lsquid:S1192"KDefine a constant instead of duplicating this literal "connection" 3 times.(è²š„øÿÿÿÿ8­ô±ç,
-hsquid:S1192"GDefine a constant instead of duplicating this literal "accept" 3 times.(¢­œÜüÿÿÿÿ8­ô±ç,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(³‚©‘üÿÿÿÿ8½¯‚Õç,
-=squid:S1148"#Use a logger to log this exception.(‰œ‰Õúÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-Ksquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8­ô±ç,
-6squid:S1643"Use a StringBuilder instead.(¦í°—øÿÿÿÿ
-R
-squid:S106"9Replace this use of System.out or System.err by a logger.(Ò‡‹òıÿÿÿÿ
-?squid:S1148"#Use a logger to log this exception.(Ç’Çê8­ô±ç,
-R
-squid:S106"9Replace this use of System.out or System.err by a logger.(Ò‡‹òıÿÿÿÿ
-6squid:S1643"Use a StringBuilder instead.(¦í°—øÿÿÿÿ
-M
-squid:S106"9Replace this use of System.out or System.err by a logger.(ğÂè‚
+squid:S106"9Replace this use of System.out or System.err by a logger.(ğÂè‚8¿±›×ç,
+Ksquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8¿±›×ç,
+Msquid:S1612",Replace this lambda with a method reference.( ãöùÿÿÿÿ8¿±›×ç,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¿±›×ç,
+Ksquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8¿±›×ç,
+=squid:S1643"Use a StringBuilder instead.(¦í°—øÿÿÿÿ8¿±›×ç,
+Ksquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8¿±›×ç,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¿±›×ç,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¿±›×ç,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(³‚©‘üÿÿÿÿ8¿±›×ç,
 T
-squid:S106"9Replace this use of System.out or System.err by a logger.(ğÂè‚8­ô±ç,
-]squid:UselessImportCheck"4Remove this unused import 'java.lang.reflect.Field'.(„‡Áú8½¯‚Õç,
-Msquid:S1612",Replace this lambda with a method reference.( ãöùÿÿÿÿ8½¯‚Õç,
-6squid:S1643"Use a StringBuilder instead.(¦í°—øÿÿÿÿ
-8squid:S1148"#Use a logger to log this exception.(Ç’Çê
-Msquid:S1602",Remove useless curly braces around statement( ãöùÿÿÿÿ8½¯‚Õç,
-?squid:S1148"#Use a logger to log this exception.(Ç’Çê8­ô±ç,
-Ksquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8­ô±ç,
-=squid:S1148"#Use a logger to log this exception.(‰œ‰Õúÿÿÿÿ
-“squid:S1192"wDefine a constant instead of duplicating this literal "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;SV1)" 5 times.(ï“ŞŒ8­ô±ç,
-Dsquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
-=squid:S1643"Use a StringBuilder instead.(¦í°—øÿÿÿÿ8­ô±ç,
-Ksquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8­ô±ç,
+squid:S106"9Replace this use of System.out or System.err by a logger.(ğÂè‚8¿±›×ç,
+Dsquid:S1148"#Use a logger to log this exception.(‰œ‰Õúÿÿÿÿ8¿±›×ç,
+lsquid:S1192"KDefine a constant instead of duplicating this literal "Keep-Alive" 3 times.(è²š„øÿÿÿÿ8¿±›×ç,
+=squid:S1643"Use a StringBuilder instead.(¦í°—øÿÿÿÿ8¿±›×ç,
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ò‡‹òıÿÿÿÿ8¿±›×ç,
+=squid:S1643"Use a StringBuilder instead.(¦í°—øÿÿÿÿ8¿±›×ç,
+Msquid:S1612",Replace this lambda with a method reference.( ãöùÿÿÿÿ8¿±›×ç,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¿±›×ç,
+lsquid:S1192"KDefine a constant instead of duplicating this literal "connection" 3 times.(è²š„øÿÿÿÿ8¿±›×ç,
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ò‡‹òıÿÿÿÿ8¿±›×ç,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(³‚©‘üÿÿÿÿ8¿±›×ç,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¿±›×ç,
+?squid:S1148"#Use a logger to log this exception.(Ç’Çê8¿±›×ç,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(³‚©‘üÿÿÿÿ8¿±›×ç,
+Msquid:S1602",Remove useless curly braces around statement( ãöùÿÿÿÿ8¿±›×ç,
+Msquid:S1602",Remove useless curly braces around statement( ãöùÿÿÿÿ8¿±›×ç,
+~squid:S1192"bDefine a constant instead of duplicating this literal "å‘é€ POST è¯·æ±‚å‡ºç°å¼‚å¸¸ï¼" 3 times.(ğÂè‚8¿±›×ç,
+hsquid:S1192"GDefine a constant instead of duplicating this literal "accept" 3 times.(¢­œÜüÿÿÿÿ8¿±›×ç,
 T
-squid:S106"9Replace this use of System.out or System.err by a logger.(öî‘”8­ô±ç,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(³‚©‘üÿÿÿÿ8½¯‚Õç,
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8­ô±ç,
+squid:S106"9Replace this use of System.out or System.err by a logger.(öî‘”8¿±›×ç,
+Dsquid:S1148"#Use a logger to log this exception.(‰œ‰Õúÿÿÿÿ8¿±›×ç,
+=squid:S1643"Use a StringBuilder instead.(¦í°—øÿÿÿÿ8¿±›×ç,
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(ğÂè‚8¿±›×ç,
+?squid:S1148"#Use a logger to log this exception.(Ç’Çê8¿±›×ç,
+]squid:UselessImportCheck"4Remove this unused import 'java.lang.reflect.Field'.(„‡Áú8¿±›×ç,
