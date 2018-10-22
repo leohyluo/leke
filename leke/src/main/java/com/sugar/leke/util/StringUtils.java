@@ -774,6 +774,7 @@ public final class StringUtils {
 		return i;
 	}
 
+
 	/**
 	 * 截取括号
 	 * @param answerContent

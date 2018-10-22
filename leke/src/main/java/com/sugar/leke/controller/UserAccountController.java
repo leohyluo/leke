@@ -28,4 +28,20 @@ public class UserAccountController {
         UserAccount userAccount = userAccountService.getByUserName(userName);
         return WebUtils.buildSuccessResponseMessage(userAccount);
     }
+
+    @GetMapping("/status/{mobile}")
+    public ResponseMessage status(@PathVariable String mobile) {
+        ResponseStatus responseStatus = userAccountService.getAccountStatus(mobile);
+        return WebUtils.buildResponseMessage(responseStatus);
+    }
+
+    @GetMapping("/active/{isActive}/{mobile}")
+    public ResponseMessage stop(@PathVariable Integer isActive, @PathVariable String mobile){
+        UserAccount userAccount = userAccountService.getByUserName(mobile);
+        if (userAccount == null) {
+            return WebUtils.buildResponseMessage(ResponseStatus.USER_NOT_FOUND);
+        }
+        userAccountService.updateAccoutActive(userAccount, isActive);
+        return WebUtils.buildSuccessResponseMessage();
+    }
 }

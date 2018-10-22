@@ -2,15 +2,18 @@ package com.sugar.leke.service.impl;
 
 import com.alibaba.fastjson.JSONObject;
 import com.sugar.leke.enums.AccountStatus;
-import com.sugar.leke.pojo.ReceiptInfo;
+import com.sugar.leke.framework.web.ResponseStatus;
+import com.sugar.leke.mapper.OrderTaskMapper;
+import com.sugar.leke.pojo.OrderTask;
 import com.sugar.leke.service.OrderService;
 import com.sugar.leke.thread.ReceiptThread;
 import com.sugar.leke.thread.pool.ThreadPoolScheduler;
 import com.sugar.leke.util.CollectionUtils;
+import com.sugar.leke.util.DateUtils;
 import com.sugar.leke.util.HttpUtils;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDateTime;
+import javax.annotation.Resource;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -19,6 +22,8 @@ import java.util.Map;
 public class OrderServiceImpl implements OrderService {
 
     private static Map<String, String> map = new HashMap<>();
+    @Resource
+    private OrderTaskMapper orderTaskMapper;
 
     @Override
     public void login(String userName, String password, String sessionId) {
@@ -46,16 +51,24 @@ public class OrderServiceImpl implements OrderService {
     }
 
     @Override
-    public void receipt(String userName, String sessionId) {
+    public void receipt(String mobile, String sessionId) {
+
         String url = "http://s.58leke.com/index.php?s=/Indexajax/taskset.html";
         String param = "task_type=1&app=1&pc=2&maxmoney=&hasCaptcha=0&captcha_code=";
 
-        ReceiptInfo receiptInfo = new ReceiptInfo(userName);
-        receiptInfo.setTotalCount(1);
-        receiptInfo.setStatus(AccountStatus.接单中.getCode());
-
-        ThreadPoolScheduler.addTask(new ReceiptThread(userName, sessionId));
-
+        OrderTask orderParam = new OrderTask();
+        orderParam.setMobile(mobile);
+        orderParam.setToday(DateUtils.today());
+        orderParam.setStatus(AccountStatus.接单中.getCode());
+        List<OrderTask> orderTaskList = orderTaskMapper.listUserOrderByStatus(orderParam);
+        OrderTask orderTask;
+        if(orderTaskList.isEmpty()) {
+            orderTask = new OrderTask(mobile);
+            orderTaskMapper.insert(orderTask);
+        } else {
+            orderTask = orderTaskList.get(0);
+        }
+        ThreadPoolScheduler.addTask(new ReceiptThread(orderTask, sessionId));
     }
 
     @Override

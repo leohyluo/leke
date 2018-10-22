@@ -13,8 +13,6 @@ i
 9src/main/java/com/sugar/leke/wechar/util/WecharUtils.java,8\c\8ce5aa933e61006b95d1efea92a9c9b627c5b771
 o
 ?src/main/java/com/sugar/leke/service/OfficalAccountService.java,3\3\3383ea03aac8985ad6cd33e262fddb247d668f8b
-c
-3src/main/java/com/sugar/leke/config/MobilePool.java,1\e\1ec162f32f8c990c8b8fb701db219de7e56f29dc
 `
 0src/main/java/com/sugar/leke/util/HttpUtils.java,6\a\6a27dc95d78e222837091a4afc0868315954167f
 7

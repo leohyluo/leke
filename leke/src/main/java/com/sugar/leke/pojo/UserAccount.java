@@ -32,6 +32,9 @@ public class UserAccount {
     @Column(name = "status")
     private Integer status;
 
+    @Column(name = "is_active")
+    private Integer isActive;
+
     public Long getId() {
         return id;
     }
@@ -86,5 +89,13 @@ public class UserAccount {
 
     public void setStatus(Integer status) {
         this.status = status;
+    }
+
+    public Integer getIsActive() {
+        return isActive;
+    }
+
+    public void setIsActive(Integer isActive) {
+        this.isActive = isActive;
     }
 }
