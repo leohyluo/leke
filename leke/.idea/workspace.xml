@@ -26,8 +26,8 @@
       <file leaf-file-name="UserAccountController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sugar/leke/controller/UserAccountController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-60">
-              <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+            <state relative-caret-position="565">
+              <caret line="36" column="32" lean-forward="false" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -940,8 +940,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sugar/leke/controller/UserAccountController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-60">
-          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+        <state relative-caret-position="565">
+          <caret line="36" column="32" lean-forward="false" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="32" />
           <folding />
         </state>
       </provider>
