@@ -25,7 +25,7 @@ public class LekeServiceImpl implements LekeService {
     private OrderTaskMapper orderTaskMapper;
 
     @Override
-    public void login(String userName, String password, String sessionId) {
+    public String login(String userName, String password, String sessionId) {
         String url = "http://s.58leke.com/index.php?s=/Index/login.html";
         String param = "username="+userName+"&password="+password;
 
@@ -47,6 +47,7 @@ public class LekeServiceImpl implements LekeService {
         String result = HttpUtils.doPost(url, param, requestHeader);
         JSONObject json = JSONObject.parseObject(result);
         System.out.println(json.toJSONString());
+        return json.toJSONString();
     }
 
     @Override

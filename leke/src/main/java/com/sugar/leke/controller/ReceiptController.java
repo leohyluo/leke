@@ -39,4 +39,17 @@ public class ReceiptController {
         orderService.receipt(mobile, sessionId);
         return WebUtils.buildSuccessResponseMessage();
     }
+
+    @GetMapping("/start2/{mobile}")
+    public ResponseMessage start2(@PathVariable String mobile) {
+        UserAccount userAccount = userAccountService.getByUserName(mobile);
+        if (userAccount == null) {
+            return WebUtils.buildResponseMessage(ResponseStatus.USER_NOT_FOUND);
+        }
+        String sessionId = userAccount.getSessionId();
+        orderService.receipt(mobile, sessionId);
+        return WebUtils.buildSuccessResponseMessage();
+    }
+
+
 }

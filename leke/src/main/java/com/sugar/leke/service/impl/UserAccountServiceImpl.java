@@ -1,6 +1,7 @@
 package com.sugar.leke.service.impl;
 
 import com.sugar.leke.enums.AccountStatus;
+import com.sugar.leke.framework.exception.ServiceException;
 import com.sugar.leke.framework.web.ResponseStatus;
 import com.sugar.leke.mapper.OrderTaskMapper;
 import com.sugar.leke.mapper.UserAccountMapper;
@@ -11,6 +12,7 @@ import com.sugar.leke.service.UserAccountService;
 import com.sugar.leke.util.CollectionUtils;
 import com.sugar.leke.util.DateUtils;
 import com.sugar.leke.util.OrderUtils;
+import com.sugar.leke.util.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -80,10 +82,27 @@ public class UserAccountServiceImpl implements UserAccountService {
     }
 
     @Override
-    public ResponseStatus login(String userName, String password) {
+    public String login(String userName, String password) throws ServiceException {
+        UserAccount userAccount = this.getByUserName(userName);
+        if (userAccount == null) {
+            throw new ServiceException(ResponseStatus.USER_NOT_FOUND);
+        }
         String sessionId = lekeService.getSessionId();
         logger.info("sessionId is {}", sessionId);
-        lekeService.login(userName, password, sessionId);
-        return null;
+        String result = lekeService.login(userName, password, sessionId);
+        if (result.contains("成功")) {
+            String userPwd = StringUtils.isNotEmpty(userAccount.getPassword()) ? userAccount.getPassword() : "";
+            if (!userPwd.equals(password)) {
+                userAccount.setPassword(password);
+            }
+            userAccount.setSessionId(sessionId);
+            userAccount.setStatus(AccountStatus.已登录.getCode());
+            userAccountMapper.updateByPrimaryKey(userAccount);
+        } else {
+            userAccount.setStatus(AccountStatus.登录失败.getCode());
+            userAccountMapper.updateByPrimaryKey(userAccount);
+            throw new ServiceException(ResponseStatus.USER_LOGIN_FAILED);
+        }
+        return sessionId;
     }
 }

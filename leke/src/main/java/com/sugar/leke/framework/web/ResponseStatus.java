@@ -40,6 +40,7 @@ public enum ResponseStatus {
     USER_UNLOGIN(207, "未登录"),
     USER_LOGINED(208, "已登录"),
     ORDER_RECEIPTING(209, "接单中"),
+    USER_LOGIN_FAILED(210, "登录失败"),
     ORDER_RECEIPT_SUCCESS(230, "接单成功"),
     ORDER_FULL(231, "今天接手机会为3，已上限"),
     OREDER_RECEIPT_FAIL(232, "接单失败"),
