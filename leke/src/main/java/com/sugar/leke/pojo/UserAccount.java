@@ -35,6 +35,9 @@ public class UserAccount {
     @Column(name = "is_active")
     private Integer isActive;
 
+    @Column(name = "session_id")
+    private String sessionId;
+
     public Long getId() {
         return id;
     }
@@ -97,5 +100,13 @@ public class UserAccount {
 
     public void setIsActive(Integer isActive) {
         this.isActive = isActive;
+    }
+
+    public String getSessionId() {
+        return sessionId;
+    }
+
+    public void setSessionId(String sessionId) {
+        this.sessionId = sessionId;
     }
 }

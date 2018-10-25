@@ -2,7 +2,7 @@ package com.sugar.leke.enums;
 
 public enum AccountStatus {
 
-    未登录(-1, "未登录"),
+    登录失败(-1, "登录失败"),
     已登录(1, "已登录"),
     接单中(2, "接单中"),
     接单成功(3, "接单成功"),
