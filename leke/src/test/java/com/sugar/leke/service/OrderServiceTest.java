@@ -1,6 +1,6 @@
 package com.sugar.leke.service;
 
-import com.sugar.leke.service.impl.OrderServiceImpl;
+import com.sugar.leke.service.impl.LekeServiceImpl;
 import org.junit.Test;
 
 import java.util.HashMap;
@@ -20,7 +20,7 @@ public class OrderServiceTest {
         //公众号 32305819@qq.com   Wh...
 
         map.forEach((userName, password) -> {
-            OrderService orderService = new OrderServiceImpl();
+            LekeService orderService = new LekeServiceImpl();
             String sessionId = orderService.getSessionId();
             System.out.println("sessionId=" + sessionId);
 
@@ -43,7 +43,7 @@ public class OrderServiceTest {
         map.put("13632691984", "yhh840822");
 
         map.forEach((userName, password) -> {
-            OrderService orderService = new OrderServiceImpl();
+            LekeService orderService = new LekeServiceImpl();
             String sessionId = orderService.getSessionId();
             System.out.println("sessionId=" + sessionId);
 

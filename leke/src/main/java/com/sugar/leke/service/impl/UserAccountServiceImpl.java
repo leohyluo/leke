@@ -6,10 +6,13 @@ import com.sugar.leke.mapper.OrderTaskMapper;
 import com.sugar.leke.mapper.UserAccountMapper;
 import com.sugar.leke.pojo.OrderTask;
 import com.sugar.leke.pojo.UserAccount;
+import com.sugar.leke.service.LekeService;
 import com.sugar.leke.service.UserAccountService;
 import com.sugar.leke.util.CollectionUtils;
 import com.sugar.leke.util.DateUtils;
 import com.sugar.leke.util.OrderUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -24,6 +27,10 @@ public class UserAccountServiceImpl implements UserAccountService {
     private UserAccountMapper userAccountMapper;
     @Resource
     private OrderTaskMapper orderTaskMapper;
+    @Resource
+    private LekeService lekeService;
+
+    private Logger logger = LoggerFactory.getLogger(getClass());
 
     @Override
     public UserAccount getByUserName(String userName) {
@@ -70,5 +77,13 @@ public class UserAccountServiceImpl implements UserAccountService {
     public void updateAccoutActive(UserAccount userAccount, Integer isActive) {
         userAccount.setIsActive(isActive);
         userAccountMapper.updateByPrimaryKey(userAccount);
+    }
+
+    @Override
+    public ResponseStatus login(String userName, String password) {
+        String sessionId = lekeService.getSessionId();
+        logger.info("sessionId is {}", sessionId);
+        lekeService.login(userName, password, sessionId);
+        return null;
     }
 }

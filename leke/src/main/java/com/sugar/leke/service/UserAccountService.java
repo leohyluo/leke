@@ -11,4 +11,6 @@ public interface UserAccountService {
     ResponseStatus getAccountStatus(String mobile);
 
     void updateAccoutActive(UserAccount userAccount, Integer isActive);
+
+    ResponseStatus login(String userName, String password);
 }

@@ -2,10 +2,9 @@ package com.sugar.leke.service.impl;
 
 import com.alibaba.fastjson.JSONObject;
 import com.sugar.leke.enums.AccountStatus;
-import com.sugar.leke.framework.web.ResponseStatus;
 import com.sugar.leke.mapper.OrderTaskMapper;
 import com.sugar.leke.pojo.OrderTask;
-import com.sugar.leke.service.OrderService;
+import com.sugar.leke.service.LekeService;
 import com.sugar.leke.thread.ReceiptThread;
 import com.sugar.leke.thread.pool.ThreadPoolScheduler;
 import com.sugar.leke.util.CollectionUtils;
@@ -19,7 +18,7 @@ import java.util.List;
 import java.util.Map;
 
 @Service
-public class OrderServiceImpl implements OrderService {
+public class LekeServiceImpl implements LekeService {
 
     private static Map<String, String> map = new HashMap<>();
     @Resource

@@ -2,10 +2,9 @@ package com.sugar.leke.schedule;
 
 import com.sugar.leke.enums.AccountStatus;
 import com.sugar.leke.mapper.OrderTaskMapper;
-import com.sugar.leke.mapper.UserAccountMapper;
 import com.sugar.leke.pojo.OrderTask;
 import com.sugar.leke.pojo.UserAccount;
-import com.sugar.leke.service.OrderService;
+import com.sugar.leke.service.LekeService;
 import com.sugar.leke.service.UserAccountService;
 import com.sugar.leke.service.impl.OrderTaskService;
 import com.sugar.leke.util.DateUtils;
@@ -23,7 +22,7 @@ public class OrderTimer {
     @Resource
     private OrderTaskMapper orderTaskMapper;
     @Resource
-    private OrderService orderService;
+    private LekeService orderService;
     @Resource
     private UserAccountService userAccountService;
 

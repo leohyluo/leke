@@ -44,4 +44,9 @@ public class UserAccountController {
         userAccountService.updateAccoutActive(userAccount, isActive);
         return WebUtils.buildSuccessResponseMessage();
     }
+
+    @GetMapping("/login")
+    public ResponseMessage getSessionId() {
+        return null;
+    }
 }
