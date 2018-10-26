@@ -55,9 +55,5 @@ q
 Asrc/main/java/com/sugar/leke/thread/pool/ThreadPoolScheduler.java,4\5\45ac637aee35b05f2693f7280b165699cb101a01
 f
 6src/main/java/com/sugar/leke/thread/ReceiptThread.java,b\e\be9b71238e86514b26cc0d2fe8ca1a6407a36c51
-f
-6src/main/java/com/sugar/leke/service/OrderService.java,5\b\5be94c5c2793b558c4a8e829768b444d23dab055
 j
 :src/test/java/com/sugar/leke/service/OrderServiceTest.java,e\c\ec226c083fa2204dc33871787560a1ea671de783
-o
-?src/main/java/com/sugar/leke/service/impl/OrderServiceImpl.java,3\d\3daf54c88d081fb172d37cf798ae7ea396850329

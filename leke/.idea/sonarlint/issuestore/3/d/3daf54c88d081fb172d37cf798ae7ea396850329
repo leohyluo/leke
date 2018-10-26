@@ -1,10 +1,0 @@
-
-Rsquid:S2864J"4Iterate over the "entrySet" instead of the "keySet".(Å°×Œ8§«¿ûç,
-Esquid:S1068"'Remove this unused "map" private field.(ê‹ê8§«¿ûç,
-V
-squid:S106-"9Replace this use of System.out or System.err by a logger.(ğàæ˜8§«¿ûç,
-Fsquid:S14812"(Remove this unused "url" local variable.(ÅœŒ¯8§«¿ûç,
-Hsquid:S14813"*Remove this unused "param" local variable.(Üİµ8§«¿ûç,
-Wsquid:S18543"9Remove this useless assignment to local variable "param".(Üİµ8§«¿ûç,
-Usquid:S18542"7Remove this useless assignment to local variable "url".(ÅœŒ¯8§«¿ûç,
-dsquid:UselessImportCheck"4Remove this unused import 'java.time.LocalDateTime'.(æÃ§ƒüÿÿÿÿ8§«¿ûç,

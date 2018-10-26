@@ -41,11 +41,16 @@ public enum ResponseStatus {
     USER_LOGINED(208, "已登录"),
     ORDER_RECEIPTING(209, "接单中"),
     USER_LOGIN_FAILED(210, "登录失败"),
+    INVALID_USERNAME_PASSWORD(210, "用户名密码有误，请重新输入"),
     ORDER_RECEIPT_SUCCESS(230, "接单成功"),
     ORDER_FULL(231, "今天接手机会为3，已上限"),
     OREDER_RECEIPT_FAIL(232, "接单失败"),
     ORDER_EXPIRED(233, "订单已失效"),
-    USER_STOP_TASK(234, "任务已停止");
+    USER_STOP_TASK(234, "任务已停止"),
+    /**
+     * 服务器异常 44444, "Exception"
+     */
+    EXCEPTION(500, "服务器异常"),;
 
     private final int code;
     private final String message;

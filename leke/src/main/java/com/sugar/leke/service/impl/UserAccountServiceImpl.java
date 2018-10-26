@@ -98,6 +98,10 @@ public class UserAccountServiceImpl implements UserAccountService {
             userAccount.setSessionId(sessionId);
             userAccount.setStatus(AccountStatus.已登录.getCode());
             userAccountMapper.updateByPrimaryKey(userAccount);
+        } else if (result.contains("用户名密码有误")) {
+            userAccount.setStatus(AccountStatus.登录失败.getCode());
+            userAccountMapper.updateByPrimaryKey(userAccount);
+            throw new ServiceException(ResponseStatus.INVALID_USERNAME_PASSWORD);
         } else {
             userAccount.setStatus(AccountStatus.登录失败.getCode());
             userAccountMapper.updateByPrimaryKey(userAccount);
