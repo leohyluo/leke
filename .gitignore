@@ -1,6 +1,5 @@
+.git
+.idea/
 *.iml
 *.class
-*.log
-*.jar
-*/target/
-.idea/
+/target

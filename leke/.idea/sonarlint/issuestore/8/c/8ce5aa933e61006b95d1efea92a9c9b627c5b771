@@ -1,15 +1,0 @@
-
-6squid:S1643"Use a StringBuilder instead.(ê»¡°ûÿÿÿÿ
-Lsquid:S1068"2Remove this unused "EncodingAESKey" private field.(Ã´‰Âÿÿÿÿÿ
-Vsquid:S1126"AReplace this if-then-else statement by a single return statement.(‹ÉÜ¢
->squid:S1125")Remove the literal "false" boolean value.(œöèí
-{squid:S1488"aImmediately return this expression instead of assigning it to the temporary variable "eventText".(¹öÝòüÿÿÿÿ
-osquid:S1488"[Immediately return this expression instead of assigning it to the temporary variable "str".(‰Ç¿)
-Tsquid:S1118":Add a private constructor to hide the implicit public one.(‹£—ÿùÿÿÿÿ
-dsquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(þ Éü
-usquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Ã´‰Âÿÿÿÿÿ
-gsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ðÌÅ•
-dsquid:S1858"J"content" is already a string, there's no need to call "toString()" on it.(¢Øú¹ûÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-xsquid:S1157"cReplace these toUpperCase()/toLowerCase() and equals() calls with a single equalsIgnoreCase() call.(œöèí

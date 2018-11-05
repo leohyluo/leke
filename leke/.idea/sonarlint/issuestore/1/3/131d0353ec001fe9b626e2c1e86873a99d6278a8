@@ -1,8 +1,0 @@
-
-«%squid:RedundantThrowsDeclarationCheckÑ"rRemove the declaration of thrown exception 'java.lang.UnsupportedOperationException' which is a runtime exception.(¡æÛ¤8Í†Ù¶ç,
-nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Í›¸ýÿÿÿÿ8Í†Ù¶ç,
-]squid:S1118 ":Add a private constructor to hide the implicit public one.(ŸÎí½ûÿÿÿÿ8Í†Ù¶ç,
-}squid:S2293º"YReplace the type specification in this constructor call with the diamond operator ("<>").(ê¬ƒ°øÿÿÿÿ8Í†Ù¶ç,
-rsquid:S2272Í"NAdd a "NoSuchElementException" for iteration beyond the end of the collection.(¤¿ðßýÿÿÿÿ8Í†Ù¶ç,
-Ysquid:S1161Ñ":Add the "@Override" annotation above this method signature(¡æÛ¤8Í†Ù¶ç,
-bsquid:S1610 "?Convert the abstract class "CollectionUtils" into an interface.(ŸÎí½ûÿÿÿÿ8Í†Ù¶ç,
