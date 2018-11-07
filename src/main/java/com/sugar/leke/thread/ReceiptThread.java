@@ -52,7 +52,7 @@ public class ReceiptThread implements Runnable {
             }
             String result = HttpUtils.doPost(url, param, requestHeader);
             try {
-                Thread.sleep(5000);
+                Thread.sleep(1000);
                 JSONObject json = JSONObject.parseObject(result);
                 System.out.println(json.toJSONString());
                 String msgs = json.getString("msgs");

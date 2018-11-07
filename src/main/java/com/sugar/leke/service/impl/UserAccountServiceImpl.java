@@ -54,8 +54,10 @@ public class UserAccountServiceImpl implements UserAccountService {
         orderParam.setToday(DateUtils.today());
         List<OrderTask> orderTaskList = orderTaskMapper.listUserOrderByStatus(orderParam);
         ResponseStatus responseStatus = null;
+        AccountStatusVo resultVo;
         if(orderTaskList.isEmpty()) {
-            responseStatus = ResponseStatus.ORDER_CAN_BE_START;
+            resultVo = new AccountStatusVo(mobile, ResponseStatus.ORDER_CAN_BE_START);
+            return resultVo;
         }
         //60分钟内未完成的订单
         List<OrderTask> unFinishOrderList = orderTaskList.stream().filter(OrderUtils::hasUnFinishOrder).collect(toList());
@@ -75,7 +77,7 @@ public class UserAccountServiceImpl implements UserAccountService {
         } else if (status == AccountStatus.已上限.getCode()) {
             responseStatus = ResponseStatus.ORDER_FULL;
         }
-        AccountStatusVo resultVo = new AccountStatusVo(mobile, responseStatus);
+        resultVo = new AccountStatusVo(mobile, responseStatus);
         return resultVo;
     }
 
